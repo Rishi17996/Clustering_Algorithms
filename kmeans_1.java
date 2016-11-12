@@ -27,15 +27,8 @@ class kmeans_1 {
         }
         double[] mean = new double[nm];
         double[] temp_mean = new double[nm];
-        /* int[] loc = new int[nm];                                //Mean location in ele[] (random means)        
-        Random r = new Random();
-        for(int i =0;i<nm;i++) {
-            loc[i] = i*((int)(ne/nm)) + r.nextInt(ne/nm);
-            mean[i] = ele[loc[i]];
-        }*/
         
-        //Initial means as means of ne/nm elements
-        Double ab = new Double((ne/nm)+0.5);
+        int abc = (int) Math.round(ab);
         int abc = ab.intValue();
         for(int i=0;i<nm;i++) {
             int s = 0;
