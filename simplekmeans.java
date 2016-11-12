@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class kmeans {
+class simplekmeans {
     public static void main(String xyz[]) throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the total number of elements : ");
