@@ -38,21 +38,12 @@ class ktwo {
         System.out.println();
         System.out.println("Initial means :");
         f.disp_means(mean,nm);
-        //int xyz = f.equal(temp_mean,mean,nm);
-        //System.out.println(xyz);
-        //f.allot(ele,cluster,count,mean,nm,ne);
-        //f.disp_clu(cluster,count,nm);
-        //f.update_means(cluster,count,nm,mean,temp_mean);
-        //f.update_count(count,nm);
-        //f.disp_means(mean,nm);
-        //xyz = f.equal(temp_mean,mean,nm);
-        //System.out.println(xyz);
         for(int it=1;;it++) {
             if(f.equal(temp_mean,mean,nm)) {
                 System.out.println();
                 System.out.println("Iteration "+it+" :");
-                f.allot(ele,cluster,count,mean,nm,ne); //done
-                f.disp_clu(cluster,count,nm); //done
+                f.allot(ele,cluster,count,mean,nm,ne); 
+                f.disp_clu(cluster,count,nm);
                 f.update_means(cluster,count,nm,mean,temp_mean);
                 f.update_count(count,nm);
                 f.disp_means(mean,nm);
